@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 01 - Bốn Mùa</title>
+    <style>
+        /* Khai báo biến CSS theo yêu cầu trọng tâm kỹ thuật */
+        :root {
+            --bg-page: #FFFDE7;
+            --border-color: #9E9E9E;
+            --text-blue: #0033CC;
+            --text-red: #D40000;
+            --title-bg: #FFD9E6;
+        }
+
+        /* Căn giữa toàn bộ khung ra giữa màn hình bằng Flexbox */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Khung bao bài thơ */
+        .khung-tho {
+            width: 640px;
+            background-color: var(--bg-page);
+            border: 1px solid var(--border-color);
+            padding: 24px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Tiêu đề bài thơ */
+        h1 {
+            color: var(--text-red);
+            background-color: var(--title-bg);
+            font-size: 26px;
+            font-weight: bold;
+            padding: 6px 0;
+            margin: 0 0 20px 0;
+        }
+
+        /* Định dạng chung cho các khổ thơ */
+        .kho {
+            font-style: italic;
+            line-height: 1.7;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /* Khổ 1 và Khổ 3 màu xanh dương */
+        .kho-xanh {
+            color: var(--text-blue);
+        }
+
+        /* Khổ 2 màu đỏ */
+        .kho-do {
+            color: var(--text-red);
+        }
+
+        /* Đường kẻ ngang ngăn cách giữa các khổ thơ */
+        hr {
+            width: 55%;
+            border: none;
+            border-top: 1px solid var(--text-blue);
+            margin: 16px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <article class="khung-tho">
+        <h1>BỐN MÙA</h1>
+        
+        <!-- Khổ 1 -->
+        <p class="kho kho-xanh">
+            Xuân về hoa nở khắp trời<br>
+            Hạ sang nắng cháy rạng ngời phố quen<br>
+            Thu về lá rụng bên thềm
+        </p>
+
+        <hr>
+
+        <!-- Khổ 2 -->
+        <p class="kho kho-do">
+            Đông sang gió lạnh bên em đợi chờ<br>
+            Bốn mùa là bốn giấc mơ<br>
+            Thời gian đi mãi ta chờ đợi ai
+        </p>
+
+        <hr>
+
+        <!-- Khổ 3 -->
+        <p class="kho kho-xanh">
+            Một năm rồi lại một năm<br>
+            Vẫn còn câu hát thì thầm quê hương<br>
+            Chờ xuân nắng mới soi đường
+        </p>
+    </article>
+
+</body>
+</html>
