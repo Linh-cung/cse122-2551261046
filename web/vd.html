@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treine.me</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #69b99d;
+        }
+
+        /* Khung trang */
+        .page {
+            width: 1000px;
+            max-width: 90%;
+            margin: 50px auto;
+            padding: 30px 40px;
+            background: white;
+            border-radius: 5px;
+        }
+
+        /* Header */
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #69b99d;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-size: 15px;
+        }
+
+        /* Main */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            margin-top: 70px;
+        }
+
+        /* Nội dung */
+        .copy {
+            width: 55%;
+        }
+
+        .copy h1 {
+            font-size: 45px;
+            font-weight: normal;
+            line-height: 1.2;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .copy h1 span {
+            color: #69b99d;
+        }
+
+        .copy p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #69b99d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #4e9f83;
+        }
+
+        /* Ảnh */
+        .hero img {
+            width: 40%;
+            max-width: 350px;
+            height: auto;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 70px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .page {
+                padding: 25px;
+            }
+
+            .top {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hero {
+                flex-direction: column;
+                margin-top: 35px;
+            }
+
+            .copy {
+                width: 100%;
+            }
+
+            .copy h1 {
+                font-size: 32px;
+            }
+
+            .hero img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+        <header class="top">
+            <a class="logo" href="#">treine.me</a>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Training</a>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main class="hero">
+
+            <div class="copy">
+                <h1>
+                    WORKOUTS MADE<br>
+                    EXCLUSIVE FOR<br>
+                    <span>YOU!</span>
+                </h1>
+
+                <p>
+                    We create exclusive and unique
+                    workouts for you. Invest in your
+                    body and get much more performance
+                    and quality of life.
+                </p>
+
+                <a class="btn" href="#">
+                    Start now
+                </a>
+            </div>
+
+            <img
+                src="fitness.png"
+                alt="Woman exercising with dumbbells"
+            >
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            Send us a message
+            <a href="mailto:contact@treine.me">
+                @treine.me
+            </a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
